@@ -1,0 +1,155 @@
+/* Formatos */
+
+:root{
+    --font-color: #2C3345;
+    --color-fondo: #F3F3FE;
+    --border-input: #b8bdc9;
+    --label-color: #57647e;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-fondo);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--font-color);
+}
+
+header{
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 8vw;
+    margin-bottom: 2vw;
+}
+
+/* Diseño general */
+
+h1{
+    font-weight: 500;
+    margin: 4vw 0;
+}
+
+h2{
+    font-weight: 300;
+    border-bottom: solid 2px var(--color-fondo);
+    padding-bottom: 2vw;
+    margin: 2.5vw 0;
+}
+
+h3{
+    font-weight: 100;
+    margin: 2vw 0 2.5vw 0;
+}
+
+/* Inputs */
+
+label{
+    margin: 0.5vw 0 1vw 0;
+}
+
+.label-text{
+    font-size: 1.2vw;
+    color: var(--label-color);
+    margin-top: 0.2vw;
+}
+
+input{
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+    border: solid 1px #b8bdc9;
+    border-radius: 4px;
+}
+
+input[type="text"]{
+    padding: 1%;
+}
+
+input[type="date"]{
+    padding: 1%;
+    width: 50%;
+}
+
+input[type="datetime-local"]{
+    padding: 1%;
+    width: 50%;
+}
+
+select{
+    padding: 1%;
+    width: 50%;
+    border: solid 1px #b8bdc9;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+/* Diseño específico */
+
+form{
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 4%;
+}
+
+#section-geolocalizacion{
+    border-top: solid 2px var(--color-fondo);
+    padding-top: 2vw;
+}
+
+#establecimiento-sanitario{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.dos-divs-juntos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dos-divs-juntos div{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.dos-divs-juntos div input{
+    margin-top: 1vw;
+    width: 25vw;
+    padding: 2%;
+}
+
+.dos-divs-juntos div label{
+    margin-top: .5vw;
+}
+
+.fecha-nacimiento{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.div-largo{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.botones-form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button{
+    width: 9vw;
+    height: 3.5vw;
+    color: white;
+    background-color: #2e69ff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5vw;
+}

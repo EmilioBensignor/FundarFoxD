@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>LOGO</header>
+    <!-- <section id="progress">
+        <div>
+            barra que progresa
+        </div>
+        <div>
+            <p>1% completado</p>
+            <p>1/52 Campos completados</p>
+        </div>
+    </section> -->
+    <form id="user-form">
+        <h1>Formulario</h1>
+        <section id="section-geolocalizacion">
+            <h3>Geolocalización</h3>
+        </section>
+        <section id="establecimiento-sanitario">
+            <h2>Establecimiento sanitario</h2>
+            <label for="nombre-hospital">Nombre</label>
+            <select id="nombre-hospital" name="nombre-hospital" required>
+                <option value="">Seleccione</option>
+                <option value="hospital-santojanni">Hospital Santojanni</option>
+                <option value="hospital-fernandez">Hospital Fernández</option>
+            </select>
+            <label for="fecha-hora">Fecha y Horario de Atención</label>
+            <input type="datetime-local" id="fecha-hora" name="fecha-hora">
+        </section>
+        <section id="datos-personales">
+            <h2>Datos personales</h2>
+            <h3>Nombre</h3>
+            <div class="dos-divs-juntos">
+                <div>
+                    <label for="nombre" class="label-text">Nombre</label>
+                    <input type="text" id="nombre"/>
+                </div>
+                <div>
+                    <label for="apellido" class="label-text">Apellido</label>
+                    <input type="text" id="apellido"/>
+                </div>
+            </div>
+            <h3>Fecha de nacimiento</h3>
+            <div class="fecha-nacimiento">
+                <label for="fecha-de-nacimiento" class="label-text">Fecha</label>
+                <input type="date" id="fecha-de-nacimiento"/>
+            </div>
+            <h3>Dirección particular</h3>
+            <div class="div-largo">
+                <label for="direccion-linea-1" class="label-text">Dirección de la calle</label>
+                <input type="text" id="direccion-linea-1"/>
+            </div>
+            <div class="div-largo">
+                <label for="direccion-linea-2" class="label-text">Dirección de la calle Linea 2</label>
+                <input type="text" id="direccion-linea-2"/>
+            </div>
+            <div class="dos-divs-juntos">
+                <div>
+                    <label for="ciudad" class="label-text">Ciudad</label>
+                    <input type="text" id="ciudad">
+                </div>
+                <div>
+                    <label for="estado-provincia" class="label-text">Estado / Provincia</label>
+                    <input type="text" id="estado-provincia">
+                </div>
+            </div>
+            <div class="div-largo">
+                <label for="codigo-postal" class="label-text">Código Postal</label>
+                <input type="text" id="codigo-postal">
+            </div>
+            <h3>Sexo</h3>
+            <select id="sexo" name="sexo" required>
+                <option value="">Seleccione</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="o">O</option>
+                <option value="x">X</option>
+            </select>
+            <h3>Situación Conyugal</h3>
+            <select id="situacion-conyugal" name="situacion-conyugal" required>
+                <option value="">Seleccione</option>
+                <option value="con-pareja">Con pareja</option>
+                <option value="sin-pareja">Sin pareja</option>
+                <option value="no-responde">No responde</option>
+            </select>
+            <h3>Nivel Educativo</h3>
+            <select id="nivel-educativo" name="nivel-educativo" required>
+                <option value="">Seleccione</option>
+                <option value="sin-instruccion">Sin instrucción (SI)</option>
+                <option value="primaria-completa">Primaria Incompleta (PI)</option>
+                <option value="primaria-incompleta">Primaria Completa (PC)</option>
+                <option value="secundaria-completa">Secundaria Incompleta (SI)</option>
+                <option value="secundaria-incompleta">Secundaria Completa (SC)</option>
+                <option value="tu-incompleta">Terciaria o Universidad Incompleta (TUI)</option>
+                <option value="tu-completa">Terciaria o Universidad Completa (TUC)</option>
+                <option value="nosabe-nocontesta">No sabe o no contesta (NSNC)</option>
+            </select>
+            <h3>Situación Laboral</h3>
+            <select id="situacion-laboral" name="situacion-laboral" required>
+                <option value="">Seleccione</option>
+                <option value="tiempo-completo">Trabaja a tiempo completo (más de 35 horas)</option>
+                <option value="tiempo-parcial">Trabaja a tiempo parcial (menos de 35 horas)</option>
+                <option value="trabaja-esporadicamente">Trabaja esporádicamente</option>
+                <option value="desempleado">Desempleado</option>
+                <option value="dedicado-al-estudio">Dedicado al estudio</option>
+                <option value="notrabaja-nobusca">No trabaja y no busca trabajo</option>
+                <option value="trabajador-familiar">Trabajador familiar</option>
+                <option value="jubilado-pensionado-rentista">Jubilado / pensionado / rentista</option>
+                <option value="incapacitado-para-trabajar">Incapacitado para trabajar</option>
+                <option value="nosabe-nocontesta">No sabe o no contesta (NSNC)</option>
+            </select>
+            <h3>Ocupación</h3>
+            <select id="ocupacion" name="ocupacion" required>
+                <option value="">Seleccione</option>
+                <option value="como-propio">Para su propio negocio / empresa / actividad</option>
+                <option value="como-empleado">Como obrero o empleado para un patrón / empresa / institución</option>
+                <option value="como-servicio-domestico">Como servicio doméstico</option>
+            </select>
+            <h3>¿Tiene licencia de conducir en estado vigente?</h3>
+            <select id="licencia-conducir" name="licencia-conducir" required>
+                <option value="">Seleccione</option>
+                <option value="si">Si</option>
+                <option value="no">No</option>
+                <option value="nosabe-nocontesta">No sabe o no contesta</option>
+            </select>
+            <h3>¿Qué tipo de vehículo lo habilita a conducir esta licencia?</h3>
+            <select id="tipo-licencia-conducir" name="tipo-licencia-conducir" required>
+                <option value="">Seleccione</option>
+                <option value="ciclomotores">Ciclomotores, Motocicletas y Triciclos motorizados</option>
+                <option value="automoviles-camionetas">Automóviles y camionetas con acoplados de hasta 750 kg de peso a casa rodante</option>
+                <option value="camiones-claseB">Camiones sin acoplado y los comprendidos en la clase B</option>
+                <option value="servicios-B-C">Los destinados al servicio de transporte de pasajeros, emergencias, seguridad y los de clase B o C, según caso</option>
+                <option value="automores-discapacitados">Automotores especialmente adaptados para discapacitados</option>
+                <option value="agricolas">Tractores agrícolas y maquinaria especial agrícola</option>
+            </select>
+            <h3>Dirección del siniestro</h3>
+            <div class="div-largo">
+                <label for="direccion-siniestro" class="label-text">Dirección de la calle</label>
+                <input type="text" id="direccion-siniestro">
+            </div>
+            <div class="div-largo">
+                <label for="direccion-siniestro-2" class="label-text">Dirección de la calle Línea 2</label>
+                <input type="text" id="direccion-siniestro-2">
+            </div>
+            <div class="dos-divs-juntos">
+                <div>
+                    <label for="ciudad-siniestro" class="label-text">Ciudad</label>
+                    <input type="text" id="ciudad-siniestro">
+                </div>
+                <div>
+                    <label for="estado-provincia-siniestro" class="label-text">Estado / Provincia</label>
+                    <input type="text" id="estado-provincia-siniestro">
+                </div>
+            </div>
+        </section>
+        
+        <div class="botones-form">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

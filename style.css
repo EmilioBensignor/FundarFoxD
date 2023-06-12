@@ -7,19 +7,16 @@
     --label-color: #57647e;
 }
 
-*{
+.body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body{
     background-color: var(--color-fondo);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--font-color);
 }
 
-header{
+.header{
     font-size: 5vw;
     text-align: center;
     margin-top: 8vw;
@@ -28,26 +25,26 @@ header{
 
 /* Diseño general */
 
-h1{
+.h1{
     font-weight: 500;
     margin: 4vw 0;
 }
 
-h2{
+.h2{
     font-weight: 300;
     border-bottom: solid 2px var(--color-fondo);
     padding-bottom: 2vw;
-    margin: 2.5vw 0;
+    margin: 4vw 0 2.5vw 0;
 }
 
-h3{
+.h3{
     font-weight: 100;
     margin: 2vw 0 2.5vw 0;
 }
 
 /* Inputs */
 
-label{
+.label{
     margin: 0.5vw 0 1vw 0;
 }
 
@@ -64,21 +61,26 @@ input{
     border-radius: 4px;
 }
 
-input[type="text"]{
+.input-text{
     padding: 1%;
 }
 
-input[type="date"]{
-    padding: 1%;
-    width: 50%;
-}
-
-input[type="datetime-local"]{
+.input-date{
     padding: 1%;
     width: 50%;
 }
 
-select{
+.input-datetime{
+    padding: 1%;
+    width: 50%;
+}
+
+.input-radio{
+    width: 1.7vw;
+    height: 1.7vw;
+}
+
+.select{
     padding: 1%;
     width: 50%;
     border: solid 1px #b8bdc9;
@@ -87,27 +89,64 @@ select{
     margin-bottom: 1vw;
 }
 
-/* Diseño específico */
-
-form{
-    background-color: white;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 4%;
-}
+/* Geolocalización */
 
 #section-geolocalizacion{
     border-top: solid 2px var(--color-fondo);
     padding-top: 2vw;
 }
 
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: solid 3px var(--border-input);
+    border-radius: 4px;
+    padding: 2%;
+    width: 100%;
+    font-size: 1.4vw;
+    align-items: center;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+
+.div1, .div3{
+    width: 20%;
+    padding: 1%;
+}
+
+.div2, .div4{
+    width: 100%;
+    background-color: rgba(239, 239, 239, 0.3);
+    padding: 5%;
+}
+
+/* Diseño específico */
+
+#user-form{
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 4%;
+    box-shadow: 0 4px 4px rgba(87,100,126,.21);
+    border-radius: 4px;
+}
+
+/* Establecimiento sanitario */
+
 #establecimiento-sanitario{
     margin-top: 2vw;
     display: flex;
     flex-direction: column;
 }
+
+/* Datos personales */
 
 .dos-divs-juntos{
     display: flex;
@@ -139,12 +178,65 @@ form{
     flex-direction: column-reverse;
 }
 
+.div-separacion{
+    margin: 2vw 0;
+}
+
+.label-select{
+    font-size: 1.4vw;
+    margin: 2vw 0;
+}
+
+/* Condición salud paciente */
+
+.div-dos-radio{
+    display: flex;
+    align-items: center;
+}
+
+.div-dos-radio label{
+    margin: 0 0 1vw 0.5vw;
+}
+
+/* Ingreso paciente guardia */
+
+.div-select{
+    margin: 2vw 0;
+}
+
+.div-select-multiple{
+    margin: 2vw 0;
+}
+
+.select-scroll{
+    overflow-y: auto;
+    width: 100%;
+    height: 40vw;
+    padding: 2%;
+}
+
+.select-scroll::-webkit-scrollbar{
+    width: 8px;
+}
+
+.select-scroll::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.select-scroll::-webkit-scrollbar-track{
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+/* Botones */
+
 .botones-form{
     display: flex;
     justify-content: flex-end;
 }
 
-button{
+.btn-enviar{
     width: 9vw;
     height: 3.5vw;
     color: white;

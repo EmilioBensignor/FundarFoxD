@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
@@ -19,80 +22,66 @@
         </div>
     </section> -->
     <form id="user-form">
-        <h1 class="h1">Formulario</h1>
-        <section id="section-geolocalizacion">
-            <h3 class="h3">Geolocalización</h3>
-            <div class="parent">
-                <div class="div1">
-                    <p>Latitud</p>
-                </div>
-                <div class="div2">
-                    <p>0</p>
-                </div>
-                <div class="div3">
-                    <p>Longitud</p>
-                </div>
-                <div class="div4">
-                    <p>0</p>
-                </div>
+        <h1 class="h1">Encuesta de Relevamiento</h1>
+        <section id="inicio-encuesta">
+            <div class="div-par">
+                <label for="codigo-encuestador" class="label-titulo label">Código Encuestador</label>
+                <input class="input-text" type="text" id="codigo-encuestador" required/>
+            </div>
+            <div class="div-par">
+                <label class="label" for="fecha-hora">Fecha y Hora de la Encuesta</label>
+                <input class="input-datetime" type="datetime-local" id="fecha-hora" name="fecha-hora" required>
             </div>
         </section>
         <section id="establecimiento-sanitario">
             <h2 class="h2">Establecimiento sanitario</h2>
             <label class="label" for="nombre-hospital">Nombre</label>
-            <select class="select" id="nombre-hospital" name="nombre-hospital" style="font-size: 1.4vw;" required>
+            <select class="select" id="nombre-hospital" name="nombre-hospital" required>
                 <option value="">Seleccione</option>
-                <option value="hospital-santojanni">Hospital Santojanni</option>
-                <option value="hospital-fernandez">Hospital Fernández</option>
+                <option value="hospital-heroes-malvinas">Hospital Héroes de Malvinas</option>
+                <option value="hospital-interzonal-general-agudos-san-martin">Hospital Interzonal General de Agudos General José de San Martín</option>
+                <option value="hospital-interzonal-agudos-evita">Hospital Interzonal de Agudos Evita</option>
+                <option value="hospital-zonal-agudos-paroissien">Hospital Zonal General de Agudos Dr. Paroissien</option>
+                <option value="hospital-zonal-agudos-domingo-mercante">Hospital Zonal de Agudos Gdor. Domingo Mercante</option>
+                <option value="hospital-zonal-agudos-descentralizado-evita">Hospital Zonal General de Agudos Descentralizado Evita Pueblo</option>
+                <option value="hospital-general-agudos-juan-fernandez">Hospital General de Agudos Dr. Juan A. Fernández</option>
+                <option value="hospital-donacion-santojanni">Hospital Donación Francisco Santojanni</option>
+                <option value="hospital-interzonal-san-juan-bautista">Hospital Interzonal San Juan Bautista</option>
+                <option value="hospital-julio-perrando">Hospital Julio C. Perrando</option>
+                <option value="hospital-zonal-trelew-adolfo-largara">Hospital zonal Trelew Dr. Adolfo Márgara</option>
+                <option value="hospital-municipal-urgencias">Hospital Municipal De Urgencias</option>
+                <option value="hospital-rio-cuarto-san-antonio-padua">Hospital Río Cuarto San Antonio de Padua</option>
+                <option value="hospital-escuela-jose-san-martin">Hospital Escuela José de San Martín</option>
+                <option value="hospital-san-martin">Hospital San Martín</option>
+                <option value="hospital-central">Hospital Central</option>
+                <option value="hospital-pablo-soria">Hospital Pablo Soria</option>
+                <option value="hospital-lucio-molas">Hospital Dr. Lucio Molas</option>
+                <option value="hospital-regional-enrique-barros">Hospital Regional Dr. Enrique Vera Barros</option>
+                <option value="hospital-escuela-agudos-ramon-madariaga">Hospital Escuela de Agudos Dr. Ramón Madariaga</option>
+                <option value="hospital-provincial-neuquen-castro-rendon">Hospital Provincial Neuquén Dr. Castro Rendon</option>
+                <option value="hospital-artemides-zatti">Hospital Artémides Zatti</option>
+                <option value="hospital-san-bernardo">Hospital San Bernardo</option>
+                <option value="hospital-rawson">Hospital Rawson</option>
+                <option value="complejo-sanitario-san-luis">Complejo Sanitario de San Luis</option>
+                <option value="hospital-regional-rio-gallegos">Hospital Regional de Río Gallegos</option>
+                <option value="hospital-provincial-jose-maria-cullen">Hospital Provincial Dr. José María Cullén</option>
+                <option value="hospital-emergencias-clemente-alvarez">Hospital de Emergencias Dr. Clemente Álvarez</option>
+                <option value="hospital-regional-ramon-carrillo">Hospital Regional "Dr. Ramón Carrillo"</option>
+                <option value="hospital-regional-ushuaia-ernesto-campos">Hospital Regional Ushuaia Gobernador Ernesto Campos</option>
+                <option value="hospital-angel-padilla">Hospital Ángel C. Padilla</option>
             </select>
-            <label class="label" for="fecha-hora">Fecha y Horario de Atención</label>
-            <input class="input-datetime" type="datetime-local" id="fecha-hora" name="fecha-hora" required>
         </section>
         <section id="datos-personales">
             <h2 class="h2">Datos personales</h2>
-            <h3 class="h3">Nombre</h3>
-            <div class="dos-divs-juntos">
-                <div>
-                    <label for="nombre" class="label-text label">Nombre</label>
-                    <input class="input-text" type="text" id="nombre" required/>
-                </div>
-                <div>
-                    <label for="apellido" class="label-text label">Apellido</label>
-                    <input class="input-text" type="text" id="apellido" required/>
-                </div>
-            </div>
             <h3 class="h3">Fecha de nacimiento</h3>
             <div class="fecha-nacimiento">
                 <label for="fecha-de-nacimiento" class="label-text label">Fecha</label>
                 <input class="input-date" type="date" id="fecha-de-nacimiento" required/>
             </div>
-            <h3 class="h3">Dirección particular</h3>
-            <div class="div-largo">
-                <label for="direccion-linea-1" class="label-text label">Dirección de la calle</label>
-                <input class="input-text" type="text" id="direccion-linea-1" required/>
-            </div>
-            <div class="div-largo">
-                <label for="direccion-linea-2" class="label-text label">Dirección de la calle Linea 2</label>
-                <input class="input-text" type="text" id="direccion-linea-2" required/>
-            </div>
-            <div class="dos-divs-juntos">
-                <div>
-                    <label for="ciudad" class="label-text label">Ciudad</label>
-                    <input class="input-text" type="text" id="ciudad" required>
-                </div>
-                <div>
-                    <label for="estado-provincia" class="label-text label">Estado / Provincia</label>
-                    <input class="input-text" type="text" id="estado-provincia" required>
-                </div>
-            </div>
-            <div class="div-largo">
-                <label for="codigo-postal" class="label-text label">Código Postal</label>
-                <input class="input-text" type="text" id="codigo-postal" required>
-            </div>
             <div class="div-separacion">
-                <label for="sexo" class="label-select label">Sexo</label>
+                <label for="genero" class="label-select label">Género</label>
                 <div class="div-select">
-                    <select class="select" id="sexo" name="sexo" style="font-size: 1.4vw;" required>
+                    <select class="select" id="genero" name="genero" required>
                         <option value="">Seleccione</option>
                         <option value="masculino">Masculino</option>
                         <option value="femenino">Femenino</option>
@@ -104,7 +93,7 @@
             <div>
                 <label for="situacion-conyugal" class="label-select label">Situación Conyugal</label>
                 <div class="div-select">
-                    <select class="select" id="situacion-conyugal" name="situacion-conyugal" style="font-size: 1.4vw;" required>
+                    <select class="select" id="situacion-conyugal" name="situacion-conyugal" required>
                         <option value="">Seleccione</option>
                         <option value="con-pareja">Con pareja</option>
                         <option value="sin-pareja">Sin pareja</option>
@@ -115,7 +104,7 @@
             <div>
                 <label for="nivel-educativo" class="label-select label">Nivel Educativo</label>
                 <div class="div-select">
-                    <select class="select" id="nivel-educativo" name="nivel-educativo" style="font-size: 1.4vw;" required>
+                    <select class="select" id="nivel-educativo" name="nivel-educativo" required>
                         <option value="">Seleccione</option>
                         <option value="sin-instruccion">Sin instrucción (SI)</option>
                         <option value="primaria-completa">Primaria Incompleta (PI)</option>
@@ -131,7 +120,7 @@
             <div>
                 <label for="situacion-laboral" class="label-select label">Situación Laboral</label>
                 <div class="div-select">
-                    <select class="select" id="situacion-laboral" name="situacion-laboral" style="font-size: 1.4vw;" required>
+                    <select class="select" id="situacion-laboral" name="situacion-laboral" required>
                         <option value="">Seleccione</option>
                         <option value="tiempo-completo">Trabaja a tiempo completo (más de 35 horas)</option>
                         <option value="tiempo-parcial">Trabaja a tiempo parcial (menos de 35 horas)</option>
@@ -149,7 +138,7 @@
             <div>
                 <label for="ocupacion" class="label-select label">Ocupación</label>
                 <div class="div-select">
-                    <select class="select" id="ocupacion" name="ocupacion" style="font-size: 1.4vw;" required>
+                    <select class="select" id="ocupacion" name="ocupacion" required>
                         <option value="">Seleccione</option>
                         <option value="como-propio">Para su propio negocio / empresa / actividad</option>
                         <option value="como-empleado">Como obrero o empleado para un patrón / empresa / institución</option>
@@ -160,7 +149,7 @@
             <div>
                 <label for="licencia-conducir" class="label-select label">¿Tiene licencia de conducir en estado vigente?</label>
                 <div class="div-select">
-                    <select class="select" id="licencia-conducir" name="licencia-conducir" style="font-size: 1.4vw;" required>
+                    <select class="select" id="licencia-conducir" name="licencia-conducir" required>
                         <option value="">Seleccione</option>
                         <option value="si">Si</option>
                         <option value="no">No</option>
@@ -171,7 +160,7 @@
             <div>
                 <label for="tipo-licencia-conducir" class="label-select label">¿Qué tipo de vehículo lo habilita a conducir esta licencia?</label>
                 <div class="div-select">
-                    <select class="select" id="tipo-licencia-conducir" name="tipo-licencia-conducir" style="font-size: 1.4vw;" required>
+                    <select class="select" id="tipo-licencia-conducir" name="tipo-licencia-conducir" required>
                         <option value="">Seleccione</option>
                         <option value="ciclomotores">Ciclomotores, Motocicletas y Triciclos motorizados</option>
                         <option value="automoviles-camionetas">Automóviles y camionetas con acoplados de hasta 750 kg de peso a casa rodante</option>
@@ -185,20 +174,20 @@
             <h3 class="h3">Dirección del siniestro</h3>
             <div class="div-largo">
                 <label for="direccion-siniestro" class="label-text label">Dirección de la calle</label>
-                <input class="input-text" type="text" id="direccion-siniestro" required>
+                <input class="input-largo input" type="text" id="direccion-siniestro" required>
             </div>
             <div class="div-largo">
                 <label for="direccion-siniestro-2" class="label-text label">Dirección de la calle Línea 2</label>
-                <input class="input-text" type="text" id="direccion-siniestro-2" required>
+                <input class="input-largo input" type="text" id="direccion-siniestro-2" required>
             </div>
             <div class="dos-divs-juntos">
                 <div>
                     <label for="ciudad-siniestro" class="label-text label">Ciudad</label>
-                    <input class="input-text" type="text" id="ciudad-siniestro" required>
+                    <input class="input-corto input" type="text" id="ciudad-siniestro" required>
                 </div>
                 <div>
                     <label for="estado-provincia-siniestro" class="label-text label">Estado / Provincia</label>
-                    <input class="input-text" type="text" id="estado-provincia-siniestro" required>
+                    <input class="input-corto input" type="text" id="estado-provincia-siniestro" required>
                 </div>
             </div>
         </section>
@@ -206,7 +195,7 @@
             <h2 class="h2">Condición de Salud del Paciente</h2>
             <div>
                 <h3 class="h3">¿Toma alguna medicación recetada?</h3>
-                <div>
+                <div class="div-pregunta-radio">
                     <div class="div-dos-radio">
                         <input class="input-radio" name="medicacion-resetada" value="si" type="radio" id="medicacion-recetada-si">
                         <label class="label" for="medicacion-recetada-si">Sí</label>
@@ -217,7 +206,7 @@
                     </div>
                 </div>
                 <h3 class="h3">¿Toma algún psicofarmaco?</h3>
-                <div>
+                <div class="div-pregunta-radio">
                     <div class="div-dos-radio">
                         <input class="input-radio" name="psicofarmaco" value="si" type="radio" id="psicofarmaco-si">
                         <label class="label" for="psicofarmaco-si">Sí</label>
@@ -234,7 +223,7 @@
             <div>
                 <label for="estado-paciente" class="label-select label">Estado en que llegó el paciente a la guardia</label>
                 <div class="div-select">
-                    <select class="select" id="estado-paciente" name="estado-paciente" style="font-size: 1.4vw;" required>
+                    <select class="select" id="estado-paciente" name="estado-paciente" required>
                         <option value="">Seleccione</option>
                         <option value="conciente">Conciente</option>
                         <option value="inconciente">Inconciente</option>
@@ -248,11 +237,22 @@
                     <input class="input-text" type="text" id="glasgow" placeholder="Por ej., 23" required>
                 </div>
             </div>
-            <h3 class="h3">Diagnósticos Presuntivos</h3>
             <div>
-                <label for="codigos-cie-10" class="label-select label">Códigos CIE 10</label>
+                <label for="motivo-ingreso" class="label-select label">Motivo de ingreso</label>
+                <div class="div-select">
+                    <select class="select" id="motivo-ingreso" name="motivo-ingreso" required>
+                        <option value="">Seleccione</option>
+                        <option value="desconocido">Desconocido</option>
+                        <option value="siniestro-transito">Siniestro de tránsito</option>
+                        <option value="siniestro-transito-itinere">Siniestro de tránsito in itinere</option>
+                        <option value="siniestro-transito-trabajo">Siniestro de tránsito en ocasión de trabajo</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="diagnosticos-presuntivos" class="label-select label">Diagnósticos Presuntivos</label>
                 <div class="div-select-multiple">
-                    <select multiple name="codigos-cie-10" id="codigos-cie-10" class="select-scroll select">
+                    <select multiple name="diagnosticos-presuntivos" id="diagnosticos-presuntivos" class="select-scroll select">
                         <option value="Ciertas-enf-infecciosas-parasitarias">Ciertas enf. infecciosas y parasitarias</option>
                         <option value="Tumores-(neoplasias)">Tumores (neoplasias)</option>
                         <option value="Enf-sangre-organos-hematopoyeticos">Enf. de la sangre y de los órganos hematopoyeticos</option>
@@ -292,6 +292,88 @@
                         <option value="Ocupante-vehiculo-transporte-pesado-lesionado-accidente-transp">Ocupante de vehículo de transporte pesado lesionado en accidente de transp.</option>
                         <option value="Ocupante-autobus-lesionado-accidente-transp">Ocupante de autobús lesionado en accidente de transp.</option>
                     </select>
+                </div>
+            </div>
+            <div>
+                <label for="causa-extrema-morbilidad" class="label-select label">Causa Extrema de Morbilidad</label>
+                <div class="div-select">
+                    <select class="select" id="causa-extrema-morbilidad" name="causa-extrema-morbilidad" required>
+                        <option value="">Seleccione</option>
+                        <option value="peaton-lesionado-transporte-v1-v9">Peatón lesionado en accidente de transporte V01 a V09</option>
+                        <option value="ciclista-lesionado-transporte-v10-v19">Ciclista lesionado en accidente de transporte V10 a V19</option>
+                        <option value="motociclista-lesionado-transporte-v20-v29">Motociclista lesionado en accidente de transporte V20 a V29</option>
+                        <option value="ocupante-automovil-lesionado-transporte-v40-v49">Ocupante de automóvil lesionado en accidente de transporte V40 a V49</option>
+                        <option value="ocupante-camioneta-furgoneta-lesionado-transporte-v50-v59">Ocupante de camioneta o furgoneta lesionado en accidente de transporte V50 a V59</option>
+                        <option value="ocupante-vehiculo-transporte-pesado-lesionado-transporte-V60-V69">Ocupante de vehículo de transporte pesado lesionado en accidente de transporte V60 a V69</option>
+                        <option value="ocupante-autobus-lesionado-transporte-V70-V79">Ocupante de autobús lesionado en accidente de transporte V70 a V79</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="condicion-lesionado" class="label-select label">Condición del lesionado</label>
+                <div class="div-select">
+                    <select class="select" id="condicion-lesionado" name="condicion-lesionado" required>
+                        <option value="">Seleccione</option>
+                        <option value="peaton">Peatón</option>
+                        <option value="pasajero">Pasajero</option>
+                        <option value="conductor">Conductor</option>
+                        <option value="acompañante">Acompañante</option>
+                        <option value="ns-nc">NS / NC</option>
+                    </select>
+                </div>
+            </div>
+            <h3 class="h3">Elementos de seguridad</h3>
+            <div class="elementos-de-seguridad">
+                <div>
+                    <div class="div-checkbox">
+                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="cinturon-seguridad" value="cinturon-seguridad">
+                        <label class="label-checkbox" for="cinturon-seguridad">Cinturón de seguridad</label>
+                    </div>
+                    <div class="div-checkbox">
+                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="chaleco-reflectante" value="chaleco-reflectante">
+                        <label class="label-checkbox" for="chaleco-reflectante">Chaleco reflectante</label>
+                    </div>
+                    <div class="div-checkbox">
+                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="otro" value="otro">
+                        <label class="label-checkbox" for="otro">Otro</label>
+                    </div>
+                    <div class="div-checkbox">
+                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="nosabe-nocontesta" value="nosabe-nocontesta">
+                        <label class="label-checkbox" for="nosabe-nocontesta">No sabe / No contesta</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="div-checkbox">
+                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="casco-motocicleta" value="casco-motocicleta">
+                        <label class="label-checkbox" for="casco-motocicleta">Casco de motocicleta</label>
+                    </div>
+                    <div class="div-checkbox">
+                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="casco-bicicleta" value="casco-bicicleta">
+                        <label class="label-checkbox" for="casco-bicicleta">Casco de bicicleta</label>
+                    </div>
+                    <div class="div-checkbox">
+                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="no-aplica" value="no-aplica">
+                        <label class="label-checkbox" for="no-aplica">No aplica</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="consumo-sustancias-psicoactivas">
+            <h2 class="h2">Consumo de sustancias psicoactivas</h2>
+            <p>¿Consumió alguna de estas sustancias en las últimas 6 horas? LEER TODAS LAS FILAS.</p>
+            <h3 class="h3">Alcohol</h3>
+            <div class="div-tres-radio">
+                <div class="div-dos-radio">
+                    <input class="input-radio" name="alcohol" id="alcohol-no" value="alcohol-no" type="radio" checked>
+                    <label class="label" for="alcohol-no">No</label>
+                </div>
+                <div class="div-dos-radio">
+                    <input class="input-radio" name="alcohol" id="alcohol-si" value="alcohol-si" type="radio">
+                    <label class="label" for="alcohol-si">Sí</label>
+                </div>
+                <div class="div-dos-radio">
+                    <input class="input-radio" name="alcohol" id="alcohol-ns-nc" value="alcohol-ns-nc" type="radio">
+                    <label class="label" for="alcohol-ns-nc">NS/NC</label>
                 </div>
             </div>
         </section>

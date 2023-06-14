@@ -10,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
-    <header class="header">LOGO</header>
+<body>
+    <main class="body">
+        <header class="header">LOGO</header>
     <!-- <section id="progress">
         <div>
             barra que progresa
@@ -21,66 +22,66 @@
             <p>1/52 Campos completados</p>
         </div>
     </section> -->
-    <form id="user-form">
+        <form id="userForm" class="userForm">
         <h1 class="h1">Encuesta de Relevamiento</h1>
-        <section id="inicio-encuesta">
-            <div class="div-par">
-                <label for="codigo-encuestador" class="label-titulo label">Código Encuestador</label>
-                <input class="input-text" type="text" id="codigo-encuestador" required/>
+        <section id="inicioEncuesta">
+            <div class="divPar">
+                <label for="codigoEncuestador" class="labelTitulo label">Código Encuestador</label>
+                <input class="inputText" type="text" id="codigoEncuestador" required/>
             </div>
-            <div class="div-par">
-                <label class="label" for="fecha-hora">Fecha y Hora de la Encuesta</label>
-                <input class="input-datetime" type="datetime-local" id="fecha-hora" name="fecha-hora" required>
+            <div class="divPar">
+                <label class="label" for="fechahora">Fecha y Hora de la Encuesta</label>
+                <input class="inputDateTime" type="datetime-local" id="fechahora" name="fechahora" required>
             </div>
         </section>
-        <section id="establecimiento-sanitario">
+        <section id="establecimientoSanitario" class="establecimientoSanitario">
             <h2 class="h2">Establecimiento sanitario</h2>
-            <label class="label" for="nombre-hospital">Nombre</label>
-            <select class="select" id="nombre-hospital" name="nombre-hospital" required>
+            <label class="label" for="nombrehospital">Nombre</label>
+            <select class="select" id="nombrehospital" name="nombrehospital" required>
                 <option value="">Seleccione</option>
-                <option value="hospital-heroes-malvinas">Hospital Héroes de Malvinas</option>
-                <option value="hospital-interzonal-general-agudos-san-martin">Hospital Interzonal General de Agudos General José de San Martín</option>
-                <option value="hospital-interzonal-agudos-evita">Hospital Interzonal de Agudos Evita</option>
-                <option value="hospital-zonal-agudos-paroissien">Hospital Zonal General de Agudos Dr. Paroissien</option>
-                <option value="hospital-zonal-agudos-domingo-mercante">Hospital Zonal de Agudos Gdor. Domingo Mercante</option>
-                <option value="hospital-zonal-agudos-descentralizado-evita">Hospital Zonal General de Agudos Descentralizado Evita Pueblo</option>
-                <option value="hospital-general-agudos-juan-fernandez">Hospital General de Agudos Dr. Juan A. Fernández</option>
-                <option value="hospital-donacion-santojanni">Hospital Donación Francisco Santojanni</option>
-                <option value="hospital-interzonal-san-juan-bautista">Hospital Interzonal San Juan Bautista</option>
-                <option value="hospital-julio-perrando">Hospital Julio C. Perrando</option>
-                <option value="hospital-zonal-trelew-adolfo-largara">Hospital zonal Trelew Dr. Adolfo Márgara</option>
-                <option value="hospital-municipal-urgencias">Hospital Municipal De Urgencias</option>
-                <option value="hospital-rio-cuarto-san-antonio-padua">Hospital Río Cuarto San Antonio de Padua</option>
-                <option value="hospital-escuela-jose-san-martin">Hospital Escuela José de San Martín</option>
-                <option value="hospital-san-martin">Hospital San Martín</option>
-                <option value="hospital-central">Hospital Central</option>
-                <option value="hospital-pablo-soria">Hospital Pablo Soria</option>
-                <option value="hospital-lucio-molas">Hospital Dr. Lucio Molas</option>
-                <option value="hospital-regional-enrique-barros">Hospital Regional Dr. Enrique Vera Barros</option>
-                <option value="hospital-escuela-agudos-ramon-madariaga">Hospital Escuela de Agudos Dr. Ramón Madariaga</option>
-                <option value="hospital-provincial-neuquen-castro-rendon">Hospital Provincial Neuquén Dr. Castro Rendon</option>
-                <option value="hospital-artemides-zatti">Hospital Artémides Zatti</option>
-                <option value="hospital-san-bernardo">Hospital San Bernardo</option>
-                <option value="hospital-rawson">Hospital Rawson</option>
-                <option value="complejo-sanitario-san-luis">Complejo Sanitario de San Luis</option>
-                <option value="hospital-regional-rio-gallegos">Hospital Regional de Río Gallegos</option>
-                <option value="hospital-provincial-jose-maria-cullen">Hospital Provincial Dr. José María Cullén</option>
-                <option value="hospital-emergencias-clemente-alvarez">Hospital de Emergencias Dr. Clemente Álvarez</option>
-                <option value="hospital-regional-ramon-carrillo">Hospital Regional "Dr. Ramón Carrillo"</option>
-                <option value="hospital-regional-ushuaia-ernesto-campos">Hospital Regional Ushuaia Gobernador Ernesto Campos</option>
-                <option value="hospital-angel-padilla">Hospital Ángel C. Padilla</option>
+                <option value="hospitalHeroesMalvinas">Hospital Héroes de Malvinas</option>
+                <option value="hospitalInterzonalGeneralAgudosSanMartin">Hospital Interzonal General de Agudos General José de San Martín</option>
+                <option value="hospitalInterzonalAgudosEvita">Hospital Interzonal de Agudos Evita</option>
+                <option value="hospitalZonalAgudosParoissien">Hospital Zonal General de Agudos Dr. Paroissien</option>
+                <option value="hospitalZonalAgudosDomingoMercante">Hospital Zonal de Agudos Gdor. Domingo Mercante</option>
+                <option value="hospitalZonalAgudosDescentralizadoEvita">Hospital Zonal General de Agudos Descentralizado Evita Pueblo</option>
+                <option value="hospitalGeneralAgudosJuanFernandez">Hospital General de Agudos Dr. Juan A. Fernández</option>
+                <option value="hospitalDonacionSantojanni">Hospital Donación Francisco Santojanni</option>
+                <option value="hospitalInterzonalSanJuanBautista">Hospital Interzonal San Juan Bautista</option>
+                <option value="hospitalJulioPerrando">Hospital Julio C. Perrando</option>
+                <option value="hospitalZonalTrelewAdolfoLargara">Hospital zonal Trelew Dr. Adolfo Márgara</option>
+                <option value="hospitalMunicipalUrgencias">Hospital Municipal De Urgencias</option>
+                <option value="hospitalRioCuartoSanAntonioPadua">Hospital Río Cuarto San Antonio de Padua</option>
+                <option value="hospitalEscuelaJoseSanMartin">Hospital Escuela José de San Martín</option>
+                <option value="hospitalSanMartin">Hospital San Martín</option>
+                <option value="hospitalCentral">Hospital Central</option>
+                <option value="hospitalPabloSoria">Hospital Pablo Soria</option>
+                <option value="hospitalLucioMolas">Hospital Dr. Lucio Molas</option>
+                <option value="hospitalRegionalEnriqueBarros">Hospital Regional Dr. Enrique Vera Barros</option>
+                <option value="hospitalEscuelaAgudosRamonMadariaga">Hospital Escuela de Agudos Dr. Ramón Madariaga</option>
+                <option value="hospitalProvincialNeuquenCastroRendon">Hospital Provincial Neuquén Dr. Castro Rendon</option>
+                <option value="hospitalArtemidesZatti">Hospital Artémides Zatti</option>
+                <option value="hospitalSanBernardo">Hospital San Bernardo</option>
+                <option value="hospitalRawson">Hospital Rawson</option>
+                <option value="complejoSanitarioSanLuis">Complejo Sanitario de San Luis</option>
+                <option value="hospitalRegionalRioGallegos">Hospital Regional de Río Gallegos</option>
+                <option value="hospitalProvincialJoseMariaCullen">Hospital Provincial Dr. José María Cullén</option>
+                <option value="hospitalEmergenciasClementeAlvarez">Hospital de Emergencias Dr. Clemente Álvarez</option>
+                <option value="hospitalRegionalRamonCarrillo">Hospital Regional "Dr. Ramón Carrillo"</option>
+                <option value="hospitalRegionalUshuaiaErnestoCampos">Hospital Regional Ushuaia Gobernador Ernesto Campos</option>
+                <option value="hospitalAngelPadilla">Hospital Ángel C. Padilla</option>
             </select>
         </section>
-        <section id="datos-personales">
+        <section id="datosPersonales">
             <h2 class="h2">Datos personales</h2>
             <h3 class="h3">Fecha de nacimiento</h3>
-            <div class="fecha-nacimiento">
-                <label for="fecha-de-nacimiento" class="label-text label">Fecha</label>
-                <input class="input-date" type="date" id="fecha-de-nacimiento" required/>
+            <div class="fechaNacimiento">
+                <label for="fechaDeNacimiento" class="labelText label">Fecha</label>
+                <input class="inputDate" type="date" id="fechaDeNacimiento" required/>
             </div>
-            <div class="div-separacion">
-                <label for="genero" class="label-select label">Género</label>
-                <div class="div-select">
+            <div class="divSeparacion">
+                <label for="genero" class="labelSelect label">Género</label>
+                <div class="divSelect">
                     <select class="select" id="genero" name="genero" required>
                         <option value="">Seleccione</option>
                         <option value="masculino">Masculino</option>
@@ -91,139 +92,139 @@
                 </div>
             </div>
             <div>
-                <label for="situacion-conyugal" class="label-select label">Situación Conyugal</label>
-                <div class="div-select">
-                    <select class="select" id="situacion-conyugal" name="situacion-conyugal" required>
+                <label for="situacionConyugal" class="labelSelect label">Situación Conyugal</label>
+                <div class="divSelect">
+                    <select class="select" id="situacionConyugal" name="situacionConyugal" required>
                         <option value="">Seleccione</option>
-                        <option value="con-pareja">Con pareja</option>
-                        <option value="sin-pareja">Sin pareja</option>
-                        <option value="no-responde">No responde</option>
+                        <option value="conPareja">Con pareja</option>
+                        <option value="sinPareja">Sin pareja</option>
+                        <option value="noResponde">No responde</option>
                     </select>
                 </div>
             </div>
             <div>
-                <label for="nivel-educativo" class="label-select label">Nivel Educativo</label>
-                <div class="div-select">
-                    <select class="select" id="nivel-educativo" name="nivel-educativo" required>
+                <label for="nivelEducativo" class="labelSelect label">Nivel Educativo</label>
+                <div class="divSelect">
+                    <select class="select" id="nivelEducativo" name="nivelEducativo" required>
                         <option value="">Seleccione</option>
-                        <option value="sin-instruccion">Sin instrucción (SI)</option>
-                        <option value="primaria-completa">Primaria Incompleta (PI)</option>
-                        <option value="primaria-incompleta">Primaria Completa (PC)</option>
-                        <option value="secundaria-completa">Secundaria Incompleta (SI)</option>
-                        <option value="secundaria-incompleta">Secundaria Completa (SC)</option>
-                        <option value="tu-incompleta">Terciaria o Universidad Incompleta (TUI)</option>
-                        <option value="tu-completa">Terciaria o Universidad Completa (TUC)</option>
-                        <option value="nosabe-nocontesta">No sabe o no contesta (NSNC)</option>
+                        <option value="sinInstruccion">Sin instrucción (SI)</option>
+                        <option value="primariaCompleta">Primaria Incompleta (PI)</option>
+                        <option value="primariaIncompleta">Primaria Completa (PC)</option>
+                        <option value="secundariaCompleta">Secundaria Incompleta (SI)</option>
+                        <option value="secundariaIncompleta">Secundaria Completa (SC)</option>
+                        <option value="tuIncompleta">Terciaria o Universidad Incompleta (TUI)</option>
+                        <option value="tuCompleta">Terciaria o Universidad Completa (TUC)</option>
+                        <option value="nosabeNocontesta">No sabe o no contesta (NSNC)</option>
                     </select>
                 </div>
             </div>
             <div>
-                <label for="situacion-laboral" class="label-select label">Situación Laboral</label>
-                <div class="div-select">
-                    <select class="select" id="situacion-laboral" name="situacion-laboral" required>
+                <label for="situacionLaboral" class="labelSelect label">Situación Laboral</label>
+                <div class="divSelect">
+                    <select class="select" id="situacionLaboral" name="situacionLaboral" required>
                         <option value="">Seleccione</option>
-                        <option value="tiempo-completo">Trabaja a tiempo completo (más de 35 horas)</option>
-                        <option value="tiempo-parcial">Trabaja a tiempo parcial (menos de 35 horas)</option>
-                        <option value="trabaja-esporadicamente">Trabaja esporádicamente</option>
+                        <option value="tiempoCompleto">Trabaja a tiempo completo (más de 35 horas)</option>
+                        <option value="tiempoParcial">Trabaja a tiempo parcial (menos de 35 horas)</option>
+                        <option value="trabajaEsporadicamente">Trabaja esporádicamente</option>
                         <option value="desempleado">Desempleado</option>
-                        <option value="dedicado-al-estudio">Dedicado al estudio</option>
-                        <option value="notrabaja-nobusca">No trabaja y no busca trabajo</option>
-                        <option value="trabajador-familiar">Trabajador familiar</option>
-                        <option value="jubilado-pensionado-rentista">Jubilado / pensionado / rentista</option>
-                        <option value="incapacitado-para-trabajar">Incapacitado para trabajar</option>
-                        <option value="nosabe-nocontesta">No sabe o no contesta (NSNC)</option>
+                        <option value="dedicadoAlEstudio">Dedicado al estudio</option>
+                        <option value="notrabajaNobusca">No trabaja y no busca trabajo</option>
+                        <option value="trabajadorFamiliar">Trabajador familiar</option>
+                        <option value="jubiladoPensionadoRentista">Jubilado / pensionado / rentista</option>
+                        <option value="incapacitadoParaTrabajar">Incapacitado para trabajar</option>
+                        <option value="nosabeNocontesta">No sabe o no contesta (NSNC)</option>
                     </select>
                 </div>
             </div>
             <div>
-                <label for="ocupacion" class="label-select label">Ocupación</label>
-                <div class="div-select">
+                <label for="ocupacion" class="labelSelect label">Ocupación</label>
+                <div class="divSelect">
                     <select class="select" id="ocupacion" name="ocupacion" required>
                         <option value="">Seleccione</option>
-                        <option value="como-propio">Para su propio negocio / empresa / actividad</option>
-                        <option value="como-empleado">Como obrero o empleado para un patrón / empresa / institución</option>
-                        <option value="como-servicio-domestico">Como servicio doméstico</option>
+                        <option value="comoPropio">Para su propio negocio / empresa / actividad</option>
+                        <option value="comoEmpleado">Como obrero o empleado para un patrón / empresa / institución</option>
+                        <option value="comoServicioDomestico">Como servicio doméstico</option>
                     </select>
                 </div>
             </div>
             <div>
-                <label for="licencia-conducir" class="label-select label">¿Tiene licencia de conducir en estado vigente?</label>
-                <div class="div-select">
-                    <select class="select" id="licencia-conducir" name="licencia-conducir" required>
+                <label for="licenciaConducir" class="labelSelect label">¿Tiene licencia de conducir en estado vigente?</label>
+                <div class="divSelect">
+                    <select class="select" id="licenciaConducir" name="licenciaConducir" required>
                         <option value="">Seleccione</option>
                         <option value="si">Si</option>
                         <option value="no">No</option>
-                        <option value="nosabe-nocontesta">No sabe o no contesta</option>
+                        <option value="nosabeNocontesta">No sabe o no contesta</option>
                     </select>
                 </div>
             </div>
             <div>
-                <label for="tipo-licencia-conducir" class="label-select label">¿Qué tipo de vehículo lo habilita a conducir esta licencia?</label>
-                <div class="div-select">
-                    <select class="select" id="tipo-licencia-conducir" name="tipo-licencia-conducir" required>
+                <label for="tipoLicenciaConducir" class="labelSelect label">¿Qué tipo de vehículo lo habilita a conducir esta licencia?</label>
+                <div class="divSelect">
+                    <select class="select" id="tipoLicenciaConducir" name="tipoLicenciaConducir" required>
                         <option value="">Seleccione</option>
                         <option value="ciclomotores">Ciclomotores, Motocicletas y Triciclos motorizados</option>
-                        <option value="automoviles-camionetas">Automóviles y camionetas con acoplados de hasta 750 kg de peso a casa rodante</option>
-                        <option value="camiones-claseB">Camiones sin acoplado y los comprendidos en la clase B</option>
+                        <option value="automovilesCamionetas">Automóviles y camionetas con acoplados de hasta 750 kg de peso a casa rodante</option>
+                        <option value="camionesClaseB">Camiones sin acoplado y los comprendidos en la clase B</option>
                         <option value="servicios-B-C">Los destinados al servicio de transporte de pasajeros, emergencias, seguridad y los de clase B o C, según caso</option>
-                        <option value="automores-discapacitados">Automotores especialmente adaptados para discapacitados</option>
+                        <option value="automoresDiscapacitados">Automotores especialmente adaptados para discapacitados</option>
                         <option value="agricolas">Tractores agrícolas y maquinaria especial agrícola</option>
                     </select>
                 </div>
             </div>
             <h3 class="h3">Dirección del siniestro</h3>
-            <div class="div-largo">
-                <label for="direccion-siniestro" class="label-text label">Dirección de la calle</label>
-                <input class="input-largo input" type="text" id="direccion-siniestro" required>
+            <div class="divLargo">
+                <label for="direccionSiniestro" class="labelText label">Dirección de la calle</label>
+                <input class="inputLargo input" type="text" id="direccionSiniestro" required>
             </div>
-            <div class="div-largo">
-                <label for="direccion-siniestro-2" class="label-text label">Dirección de la calle Línea 2</label>
-                <input class="input-largo input" type="text" id="direccion-siniestro-2" required>
+            <div class="divLargo">
+                <label for="direccionSiniestro-2" class="labelText label">Dirección de la calle Línea 2</label>
+                <input class="inputLargo input" type="text" id="direccionSiniestro-2" required>
             </div>
-            <div class="dos-divs-juntos">
+            <div class="dosDivsJuntos">
                 <div>
-                    <label for="ciudad-siniestro" class="label-text label">Ciudad</label>
-                    <input class="input-corto input" type="text" id="ciudad-siniestro" required>
+                    <label for="ciudadSiniestro" class="labelText label">Ciudad</label>
+                    <input class="inputCorto input" type="text" id="ciudadSiniestro" required>
                 </div>
                 <div>
-                    <label for="estado-provincia-siniestro" class="label-text label">Estado / Provincia</label>
-                    <input class="input-corto input" type="text" id="estado-provincia-siniestro" required>
+                    <label for="estadoProvinciaSiniestro" class="labelText label">Estado / Provincia</label>
+                    <input class="inputCorto input" type="text" id="estadoProvinciaSiniestro" required>
                 </div>
             </div>
         </section>
-        <section id="condicion-salud-paciente">
+        <section id="condicionSaludPaciente">
             <h2 class="h2">Condición de Salud del Paciente</h2>
             <div>
                 <h3 class="h3">¿Toma alguna medicación recetada?</h3>
-                <div class="div-pregunta-radio">
-                    <div class="div-dos-radio">
-                        <input class="input-radio" name="medicacion-resetada" value="si" type="radio" id="medicacion-recetada-si">
-                        <label class="label" for="medicacion-recetada-si">Sí</label>
+                <div class="divPreguntaRadio">
+                    <div class="divDosRadio">
+                        <input class="inputRadio" name="medicacionResetada" value="si" type="radio" id="medicacionRecetadaSi">
+                        <label class="label" for="medicacionRecetadaSi">Sí</label>
                     </div>
-                    <div class="div-dos-radio">
-                        <input class="input-radio" name="medicacion-resetada" value="no" type="radio" id="medicacion-recetada-no">
-                        <label class="label" for="medicacion-recetada-no">No</label>
+                    <div class="divDosRadio">
+                        <input class="inputRadio" name="medicacionResetada" value="no" type="radio" id="medicacionRecetadaNo">
+                        <label class="label" for="medicacionRecetadaNo">No</label>
                     </div>
                 </div>
                 <h3 class="h3">¿Toma algún psicofarmaco?</h3>
-                <div class="div-pregunta-radio">
-                    <div class="div-dos-radio">
-                        <input class="input-radio" name="psicofarmaco" value="si" type="radio" id="psicofarmaco-si">
-                        <label class="label" for="psicofarmaco-si">Sí</label>
+                <div class="divPreguntaRadio">
+                    <div class="divDosRadio">
+                        <input class="inputRadio" name="psicofarmaco" value="si" type="radio" id="psicofarmacoSi">
+                        <label class="label" for="psicofarmacoSi">Sí</label>
                     </div>
-                    <div class="div-dos-radio">
-                        <input class="input-radio" name="psicofarmaco" value="no" type="radio" id="psicofarmaco-no">
-                        <label class="label" for="psicofarmaco-no">No</label>
+                    <div class="divDosRadio">
+                        <input class="inputRadio" name="psicofarmaco" value="no" type="radio" id="psicofarmacoNo">
+                        <label class="label" for="psicofarmacoNo">No</label>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="ingreso-paciente-guardia">
+        <section id="ingresoPacienteGuardia">
             <h2 class="h2">Ingreso del Paciente a la Guardia</h2>
             <div>
-                <label for="estado-paciente" class="label-select label">Estado en que llegó el paciente a la guardia</label>
-                <div class="div-select">
-                    <select class="select" id="estado-paciente" name="estado-paciente" required>
+                <label for="estadoPaciente" class="labelSelect label">Estado en que llegó el paciente a la guardia</label>
+                <div class="divSelect">
+                    <select class="select" id="estadoPaciente" name="estadoPaciente" required>
                         <option value="">Seleccione</option>
                         <option value="conciente">Conciente</option>
                         <option value="inconciente">Inconciente</option>
@@ -232,154 +233,706 @@
                 </div>
             </div>
             <div>
-                <label for="glasgow" class="label-select label">Glasgow</label>
-                <div class="div-select">
-                    <input class="input-text" type="text" id="glasgow" placeholder="Por ej., 23" required>
+                <label for="glasgow" class="labelSelect label">Glasgow</label>
+                <div class="divSelect">
+                    <input class="inputText" type="text" id="glasgow" placeholder="Por ej., 23" required>
                 </div>
             </div>
             <div>
-                <label for="motivo-ingreso" class="label-select label">Motivo de ingreso</label>
-                <div class="div-select">
-                    <select class="select" id="motivo-ingreso" name="motivo-ingreso" required>
+                <label for="motivoIngreso" class="labelSelect label">Motivo de ingreso</label>
+                <div class="divSelect">
+                    <select class="select" id="motivoIngreso" name="motivoIngreso" required>
                         <option value="">Seleccione</option>
                         <option value="desconocido">Desconocido</option>
-                        <option value="siniestro-transito">Siniestro de tránsito</option>
-                        <option value="siniestro-transito-itinere">Siniestro de tránsito in itinere</option>
-                        <option value="siniestro-transito-trabajo">Siniestro de tránsito en ocasión de trabajo</option>
+                        <option value="siniestroTransito">Siniestro de tránsito</option>
+                        <option value="siniestroTransitoItinere">Siniestro de tránsito in itinere</option>
+                        <option value="siniestroTransitoTrabajo">Siniestro de tránsito en ocasión de trabajo</option>
                     </select>
                 </div>
             </div>
             <div>
-                <label for="diagnosticos-presuntivos" class="label-select label">Diagnósticos Presuntivos</label>
-                <div class="div-select-multiple">
-                    <select multiple name="diagnosticos-presuntivos" id="diagnosticos-presuntivos" class="select-scroll select">
-                        <option value="Ciertas-enf-infecciosas-parasitarias">Ciertas enf. infecciosas y parasitarias</option>
+                <label for="diagnosticosPresuntivos" class="labelSelect label">Diagnósticos Presuntivos</label>
+                <div class="divSelectMultiple">
+                    <select multiple name="diagnosticosPresuntivos" id="diagnosticosPresuntivos" class="selectScroll select">
+                        <option value="CiertasEnfInfecciosasParasitarias">Ciertas enf. infecciosas y parasitarias</option>
                         <option value="Tumores-(neoplasias)">Tumores (neoplasias)</option>
-                        <option value="Enf-sangre-organos-hematopoyeticos">Enf. de la sangre y de los órganos hematopoyeticos</option>
-                        <option value="Enf-endocrinas-nutricionales-metabolicas">Enf. endocrinas, nutricionales y metabólicas</option>
-                        <option value="Trast-mentales-comportamiento">Trast. mentales y del comportamiento</option>
-                        <option value="Ciertas-enf-infecciosas-parasitarias">Ciertas enf. infecciosas y parasitarias</option>
+                        <option value="EnfSangreOrganosHematopoyeticos">Enf. de la sangre y de los órganos hematopoyeticos</option>
+                        <option value="EnfEndocrinasNutricionalesMetabolicas">Enf. endocrinas, nutricionales y metabólicas</option>
+                        <option value="TrastMentalesComportamiento">Trast. mentales y del comportamiento</option>
+                        <option value="CiertasEnfInfecciosasParasitarias">Ciertas enf. infecciosas y parasitarias</option>
                         <option value="Tumores-(neoplasias)">Tumores (neoplasias)</option>
-                        <option value="Enf-sangre-organos-hematopoyeticos">Enf. de la sangre y de los órganos hematopoyeticos</option>
-                        <option value="Enf-endocrinas-nutricionales-metabolicas">Enf. endocrinas, nutricionales y metabólicas</option>
-                        <option value="Trast-mentales-comportamiento">Trast. mentales y del comportamiento</option>
-                        <option value="Enf-sistema-nervioso">Enf. del sistema nervioso</option>
-                        <option value="Enf-ojo-anexos">Enf. del ojo y sus anexos</option>
-                        <option value="Enf-oido-apofisis-mastoides">Enf. del oido y de la apófisis mastoides</option>
-                        <option value="Enf-sistema-circulatorio">Enf. del sistema circulatorio</option>
-                        <option value="Enf-sistema-respiratorio">Enf. del sistema respiratorio</option>
-                        <option value="Enf-sistema-digestivo">Enf. del sistema digestivo</option>
-                        <option value="Enf-piel-tejido-subcutaneo">Enf. de la piel y el tejido subcutáneo</option>
-                        <option value="Enf-sistema-osteomuscular-tejido-conjuntivo">Enf. del sistema osteomuscular y del tejido conjuntivo</option>
-                        <option value="Enf-sistema-genitourinario">Enf. del sistema genitourinario</option>
-                        <option value="Embarazo-parto-puerperio">Embarazo, parto y puerperio</option>
-                        <option value="Tx-cabeza">Tx. de la cabeza</option>
-                        <option value="Tx-cuello">Tx. del cuello</option>
-                        <option value="Tx-torax">Tx. del tórax</option>
-                        <option value="Tx-hombro-brazo">Tx. del hombro y del brazo</option>
-                        <option value="Tx-antebrazo-codo">Tx. del antebrazo y del codo</option>
-                        <option value="Tx-cadera-muslo">Tx. de la cadera y del muslo</option>
-                        <option value="Tx-rodilla-pierna">Tx. de la rodilla y de la pierna</option>
-                        <option value="Tx-tobillo-pie">Tx. del tobillo y del pie</option>
-                        <option value="Fract-columna-vertebral-nivel-no-esp">Fract. de la columna vertebral, nivel no esp.</option>
-                        <option value="Otros-Tx-columna-vertebral-nivel-no-esp">Otros Tx. de la columna vertebral y del tronco, nivel no esp.</option>
-                        <option value="Accidentes-transp">Accidentes de transp.</option>
-                        <option value="Peaton-lesionado-accidente-transp">Peatón lesionado en accidente de transp.</option>
-                        <option value="Ciclista-lesionado-accidente-transp">Ciclista lesionado en accidente de transp.</option>
-                        <option value="Motociclista-lesionado-accidente-transp">Motociclista lesionado en accidente de transp.</option>
-                        <option value="Ocupante-automovil-lesionado-accidente-transp">Ocupante de automóvil lesionado en accidente de transp.</option>
-                        <option value="Ocupante-automovil-lesionado-accidente-transp">Ocupante de camioneta o furgoneta lesionado en accidente de transp.</option>
-                        <option value="Ocupante-vehiculo-transporte-pesado-lesionado-accidente-transp">Ocupante de vehículo de transporte pesado lesionado en accidente de transp.</option>
-                        <option value="Ocupante-autobus-lesionado-accidente-transp">Ocupante de autobús lesionado en accidente de transp.</option>
+                        <option value="EnfSangreOrganosHematopoyeticos">Enf. de la sangre y de los órganos hematopoyeticos</option>
+                        <option value="EnfEndocrinasNutricionalesMetabolicas">Enf. endocrinas, nutricionales y metabólicas</option>
+                        <option value="TrastMentalesComportamiento">Trast. mentales y del comportamiento</option>
+                        <option value="EnfSistemaNervioso">Enf. del sistema nervioso</option>
+                        <option value="EnfOjoAnexos">Enf. del ojo y sus anexos</option>
+                        <option value="EnfOidoApofisisMastoides">Enf. del oido y de la apófisis mastoides</option>
+                        <option value="EnfSistemaCirculatorio">Enf. del sistema circulatorio</option>
+                        <option value="EnfSistemaRespiratorio">Enf. del sistema respiratorio</option>
+                        <option value="EnfSistemaDigestivo">Enf. del sistema digestivo</option>
+                        <option value="EnfPielTejidoSubcutaneo">Enf. de la piel y el tejido subcutáneo</option>
+                        <option value="EnfSistemaOsteomuscularTejidoConjuntivo">Enf. del sistema osteomuscular y del tejido conjuntivo</option>
+                        <option value="EnfSistemaGenitourinario">Enf. del sistema genitourinario</option>
+                        <option value="EmbarazoPartoPuerperio">Embarazo, parto y puerperio</option>
+                        <option value="TxCabeza">Tx. de la cabeza</option>
+                        <option value="TxCuello">Tx. del cuello</option>
+                        <option value="TxTorax">Tx. del tórax</option>
+                        <option value="TxHombroBrazo">Tx. del hombro y del brazo</option>
+                        <option value="TxAntebrazoCodo">Tx. del antebrazo y del codo</option>
+                        <option value="TxCaderaMuslo">Tx. de la cadera y del muslo</option>
+                        <option value="TxRodillaPierna">Tx. de la rodilla y de la pierna</option>
+                        <option value="TxTobilloPie">Tx. del tobillo y del pie</option>
+                        <option value="FractColumnaVertebralNivelNoEsp">Fract. de la columna vertebral, nivel no esp.</option>
+                        <option value="Otros-TxColumnaVertebralNivelNoEsp">Otros Tx. de la columna vertebral y del tronco, nivel no esp.</option>
+                        <option value="AccidentesTransp">Accidentes de transp.</option>
+                        <option value="PeatonLesionadoAccidenteTransp">Peatón lesionado en accidente de transp.</option>
+                        <option value="CiclistaLesionadoAccidenteTransp">Ciclista lesionado en accidente de transp.</option>
+                        <option value="MotociclistaLesionadoAccidenteTransp">Motociclista lesionado en accidente de transp.</option>
+                        <option value="OcupanteAutomovilLesionadoAccidenteTransp">Ocupante de automóvil lesionado en accidente de transp.</option>
+                        <option value="OcupanteAutomovilLesionadoAccidenteTransp">Ocupante de camioneta o furgoneta lesionado en accidente de transp.</option>
+                        <option value="OcupanteVehiculoTransportePesadoLesionadoAccidenteTransp">Ocupante de vehículo de transporte pesado lesionado en accidente de transp.</option>
+                        <option value="OcupanteAutobusLesionadoAccidenteTransp">Ocupante de autobús lesionado en accidente de transp.</option>
                     </select>
                 </div>
             </div>
+            <h3 class="h3">Gravedad de la lesión</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="gravedadLesion" id="gravedadLesionLeve" value="gravedadLesionLeve" type="radio">
+                    <label for="gravedadLesionLeve">Leve</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="gravedadLesion" id="gravedadLesionModerada" value="gravedadLesionModerada" type="radio">
+                    <label for="gravedadLesionModerada">Moderada</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="gravedadLesion" id="gravedadLesionGrave" value="gravedadLesionGrave" type="radio">
+                    <label for="gravedadLesion">Grave</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="gravedadLesion" id="gravedadLesionNSNC" value="gravedadLesionNSNC" type="radio">
+                    <label for="gravedadLesion">NSNC</label>
+                </div>
+            </div>
+            <h3 class="h3">Naturaleza de la lesión (sólo para traumatismo - politrauma - heridas)</h3>
+            <div class="divMultipleCheckboxLargo">
+                <div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="heridaExcoriacion" value="heridaExcoriacion">
+                        <label class="labelCheckbox" for="heridaExcoriacion">Herida / Excoriación</label>
+                    </div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="esguinceTorceduraTraumaTendc" value="esguinceTorceduraTraumaTendc">
+                        <label class="labelCheckbox" for="esguinceTorceduraTraumaTendc">Esguince / Torcedura / Trauma Tendón</label>
+                    </div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="traumaIntracraneano" value="traumaIntracraneano">
+                        <label class="labelCheckbox" for="traumaIntracraneano">Trauma intracraneano</label>
+                    </div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="efectoCuerpoExtraño" value="efectoCuerpoExtraño">
+                        <label class="labelCheckbox" for="efectoCuerpoExtraño">Efecto de cuerpo extraño</label>
+                    </div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="politraumatismo" value="politraumatismo">
+                        <label class="labelCheckbox" for="politraumatismo">Politraumatismo</label>
+                    </div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="otro" value="otro">
+                        <label class="labelCheckbox" for="otro">Otro</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="traumaHematoma" value="traumaHematoma">
+                        <label class="labelCheckbox" for="traumaHematoma">Trauma / Hematoma</label>
+                    </div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="fractura" value="fractura">
+                        <label class="labelCheckbox" for="fractura">Fractura</label>
+                    </div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="lesionMedulaEspinal" value="lesionMedulaEspinal">
+                        <label class="labelCheckbox" for="lesionMedulaEspinal">Lesión médula espinal</label>
+                    </div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="intoxicacionEnvenenamiento" value="intoxicacionEnvenenamiento">
+                        <label class="labelCheckbox" for="intoxicacionEnvenenamiento">Intoxicación / Envenenamiento</label>
+                    </div>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="naturalezaLesion" id="quemaduraCorrosion" value="quemaduraCorrosion">
+                        <label class="labelCheckbox" for="quemaduraCorrosion">Quemadura / Corrosión</label>
+                    </div>
+                </div>
+            </div>
             <div>
-                <label for="causa-extrema-morbilidad" class="label-select label">Causa Extrema de Morbilidad</label>
-                <div class="div-select">
-                    <select class="select" id="causa-extrema-morbilidad" name="causa-extrema-morbilidad" required>
+                <label for="modoTransporteLesionado" class="labelSelect label">Modo de transporte del lesionado</label>
+                <div class="divSelect">
+                    <select class="select" id="modoTransporteLesionado" name="modoTransporteLesionado" required>
                         <option value="">Seleccione</option>
-                        <option value="peaton-lesionado-transporte-v1-v9">Peatón lesionado en accidente de transporte V01 a V09</option>
-                        <option value="ciclista-lesionado-transporte-v10-v19">Ciclista lesionado en accidente de transporte V10 a V19</option>
-                        <option value="motociclista-lesionado-transporte-v20-v29">Motociclista lesionado en accidente de transporte V20 a V29</option>
-                        <option value="ocupante-automovil-lesionado-transporte-v40-v49">Ocupante de automóvil lesionado en accidente de transporte V40 a V49</option>
-                        <option value="ocupante-camioneta-furgoneta-lesionado-transporte-v50-v59">Ocupante de camioneta o furgoneta lesionado en accidente de transporte V50 a V59</option>
-                        <option value="ocupante-vehiculo-transporte-pesado-lesionado-transporte-V60-V69">Ocupante de vehículo de transporte pesado lesionado en accidente de transporte V60 a V69</option>
-                        <option value="ocupante-autobus-lesionado-transporte-V70-V79">Ocupante de autobús lesionado en accidente de transporte V70 a V79</option>
+                        <option value="peatonV1V9">Peatón V01 a V09</option>
+                        <option value="animal">Animal</option>
+                        <option value="ciclistaV10V19">Ciclista V10 a V19</option>
+                        <option value="motociclistaV20V29">Motociclista V20 a V29</option>
+                        <option value="ocupanteAutomovilV40V49">Ocupante de automóvil V40 a V49</option>
+                        <option value="ocupanteCamionetaFurgonetaV50V59">Ocupante de camioneta o furgoneta V50 a V59</option>
+                        <option value="ocupanteVehiculoTransportePesadoV60V69">Ocupante de vehículo de transporte pesado V60 a V69</option>
+                        <option value="ocupanteAutobusV70V79">Ocupante de autobús V70 a V79</option>
+                        <option value="pasajeroTren">Pasajero de Tren</option>
+                        <option value="traccionAnimal">Tracción animal</option>
+                        <option value="otro">Otro</option>
+                        <option value="NSNC">NS / NC</option>
                     </select>
                 </div>
             </div>
             <div>
-                <label for="condicion-lesionado" class="label-select label">Condición del lesionado</label>
-                <div class="div-select">
-                    <select class="select" id="condicion-lesionado" name="condicion-lesionado" required>
+                <label for="contraColisionPersonaLesionada" class="labelSelect label">Contra qué colisionó la persona lesionada</label>
+                <div class="divSelect">
+                    <select class="select" id="contraColisionPersonaLesionada" name="contraColisionPersonaLesionada" required>
+                        <option value="">Seleccione</option>
+                        <option value="peatonV1V9">Peatón V01 a V09</option>
+                        <option value="animal">Animal</option>
+                        <option value="ciclistaV10V19">Ciclista V10 a V19</option>
+                        <option value="motociclistaV20V29">Motociclista V20 a V29</option>
+                        <option value="ocupanteAutomovilV40V49">Ocupante de automóvil V40 a V49</option>
+                        <option value="ocupanteCamionetaFurgonetaV50V59">Ocupante de camioneta o furgoneta V50 a V59</option>
+                        <option value="ocupanteVehiculoTransportePesadoV60V69">Ocupante de vehículo de transporte pesado V60 a V69</option>
+                        <option value="ocupanteAutobusV70V79">Ocupante de autobús V70 a V79</option>
+                        <option value="pasajeroTren">Pasajero de Tren</option>
+                        <option value="traccionAnimal">Tracción animal</option>
+                        <option value="otro">Otro</option>
+                        <option value="NSNC">NS / NC</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="condicionLesionado" class="labelSelect label">Condición del lesionado</label>
+                <div class="divSelect">
+                    <select class="select" id="condicionLesionado" name="condicionLesionado" required>
                         <option value="">Seleccione</option>
                         <option value="peaton">Peatón</option>
                         <option value="pasajero">Pasajero</option>
                         <option value="conductor">Conductor</option>
                         <option value="acompañante">Acompañante</option>
-                        <option value="ns-nc">NS / NC</option>
+                        <option value="nsNc">NS / NC</option>
                     </select>
                 </div>
             </div>
+            <h3 class="h3">Dinámica del accidente</h3>
+            <div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="dinamicaAccidente" id="dinamicaAccidenteEscribaOpcion1" value="dinamicaAccidenteEscribaOpcion1" type="radio">
+                    <label for="dinamicaAccidenteEscribaOpcion1">Escriba opción 1</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="dinamicaAccidente" id="dinamicaAccidenteEscribaOpcion2" value="dinamicaAccidenteEscribaOpcion2" type="radio">
+                    <label for="dinamicaAccidenteEscribaOpcion2">Escriba opción 2</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="dinamicaAccidente" id="dinamicaAccidenteEscribaOpcion3" value="dinamicaAccidenteEscribaOpcion3" type="radio">
+                    <label for="dinamicaAccidente">Escriba opción 3</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="dinamicaAccidente" id="dinamicaAccidenteEscribaOpcion4" value="dinamicaAccidenteEscribaOpcion4" type="radio">
+                    <label for="dinamicaAccidente">Escriba opción 4</label>
+                </div>
+            </div>
             <h3 class="h3">Elementos de seguridad</h3>
-            <div class="elementos-de-seguridad">
+            <div class="divMultipleCheckbox">
                 <div>
-                    <div class="div-checkbox">
-                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="cinturon-seguridad" value="cinturon-seguridad">
-                        <label class="label-checkbox" for="cinturon-seguridad">Cinturón de seguridad</label>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="elementosSeguridad" id="cinturonSeguridad" value="cinturonSeguridad">
+                        <label class="labelCheckbox" for="cinturonSeguridad">Cinturón de seguridad</label>
                     </div>
-                    <div class="div-checkbox">
-                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="chaleco-reflectante" value="chaleco-reflectante">
-                        <label class="label-checkbox" for="chaleco-reflectante">Chaleco reflectante</label>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="elementosSeguridad" id="chalecoReflectante" value="chalecoReflectante">
+                        <label class="labelCheckbox" for="chalecoReflectante">Chaleco reflectante</label>
                     </div>
-                    <div class="div-checkbox">
-                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="otro" value="otro">
-                        <label class="label-checkbox" for="otro">Otro</label>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="elementosSeguridad" id="otro" value="otro">
+                        <label class="labelCheckbox" for="otro">Otro</label>
                     </div>
-                    <div class="div-checkbox">
-                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="nosabe-nocontesta" value="nosabe-nocontesta">
-                        <label class="label-checkbox" for="nosabe-nocontesta">No sabe / No contesta</label>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="elementosSeguridad" id="nosabeNocontesta" value="nosabeNocontesta">
+                        <label class="labelCheckbox" for="nosabeNocontesta">No sabe / No contesta</label>
                     </div>
                 </div>
                 <div>
-                    <div class="div-checkbox">
-                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="casco-motocicleta" value="casco-motocicleta">
-                        <label class="label-checkbox" for="casco-motocicleta">Casco de motocicleta</label>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="elementosSeguridad" id="cascoMotocicleta" value="cascoMotocicleta">
+                        <label class="labelCheckbox" for="cascoMotocicleta">Casco de motocicleta</label>
                     </div>
-                    <div class="div-checkbox">
-                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="casco-bicicleta" value="casco-bicicleta">
-                        <label class="label-checkbox" for="casco-bicicleta">Casco de bicicleta</label>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="elementosSeguridad" id="cascoBicicleta" value="cascoBicicleta">
+                        <label class="labelCheckbox" for="cascoBicicleta">Casco de bicicleta</label>
                     </div>
-                    <div class="div-checkbox">
-                        <input class="input-checkbox" type="checkbox" name="elementos-seguridad" id="no-aplica" value="no-aplica">
-                        <label class="label-checkbox" for="no-aplica">No aplica</label>
+                    <div class="divCheckbox">
+                        <input class="inputCheckbox" type="checkbox" name="elementosSeguridad" id="noAplica" value="noAplica">
+                        <label class="labelCheckbox" for="noAplica">No aplica</label>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="consumo-sustancias-psicoactivas">
+        <section id="consumoSustanciasPsicoactivas">
             <h2 class="h2">Consumo de sustancias psicoactivas</h2>
             <p>¿Consumió alguna de estas sustancias en las últimas 6 horas? LEER TODAS LAS FILAS.</p>
             <h3 class="h3">Alcohol</h3>
-            <div class="div-tres-radio">
-                <div class="div-dos-radio">
-                    <input class="input-radio" name="alcohol" id="alcohol-no" value="alcohol-no" type="radio" checked>
-                    <label class="label" for="alcohol-no">No</label>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="alcohol" id="alcoholSi" value="alcoholSi" type="radio">
+                    <label class="label" for="alcoholSi">Sí</label>
                 </div>
-                <div class="div-dos-radio">
-                    <input class="input-radio" name="alcohol" id="alcohol-si" value="alcohol-si" type="radio">
-                    <label class="label" for="alcohol-si">Sí</label>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="alcohol" id="alcoholNo" value="alcoholNo" type="radio" checked>
+                    <label class="label" for="alcoholNo">No</label>
                 </div>
-                <div class="div-dos-radio">
-                    <input class="input-radio" name="alcohol" id="alcohol-ns-nc" value="alcohol-ns-nc" type="radio">
-                    <label class="label" for="alcohol-ns-nc">NS/NC</label>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="alcohol" id="alcoholNsNc" value="alcoholNsNc" type="radio">
+                    <label class="label" for="alcoholNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Tabaco</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="tabaco" id="tabacoSi" value="tabacoSi" type="radio">
+                    <label class="label" for="tabacoSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="tabaco" id="tabacoNo" value="tabacoNo" type="radio" checked>
+                    <label class="label" for="tabacoNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="tabaco" id="tabacoNsNc" value="tabacoNsNc" type="radio">
+                    <label class="label" for="tabacoNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Marihuana</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="Marihuana" id="MarihuanaSi" value="MarihuanaSi" type="radio">
+                    <label class="label" for="MarihuanaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="Marihuana" id="MarihuanaNo" value="MarihuanaNo" type="radio" checked>
+                    <label class="label" for="MarihuanaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="Marihuana" id="MarihuanaNsNc" value="MarihuanaNsNc" type="radio">
+                    <label class="label" for="MarihuanaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Solventes o Inhalables</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="solventesInhalables" id="solventesInhalablesSi" value="solventesInhalablesSi" type="radio">
+                    <label class="label" for="solventesInhalablesSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="solventesInhalables" id="solventesInhalablesNo" value="solventesInhalablesNo" type="radio" checked>
+                    <label class="label" for="solventesInhalablesNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="solventesInhalables" id="solventesInhalablesNsNc" value="solventesInhalablesNsNc" type="radio">
+                    <label class="label" for="solventesInhalablesNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Alucinógenos</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="alucinogenos" id="alucinogenosSi" value="alucinogenosSi" type="radio">
+                    <label class="label" for="alucinogenosSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="alucinogenos" id="alucinogenosNo" value="alucinogenosNo" type="radio" checked>
+                    <label class="label" for="alucinogenosNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="alucinogenos" id="alucinogenosNsNc" value="alucinogenosNsNc" type="radio">
+                    <label class="label" for="alucinogenosNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Heroína</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="heroina" id="heroinaSi" value="heroinaSi" type="radio">
+                    <label class="label" for="heroinaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="heroina" id="heroinaNo" value="heroinaNo" type="radio" checked>
+                    <label class="label" for="heroinaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="heroina" id="heroinaNsNc" value="heroinaNsNc" type="radio">
+                    <label class="label" for="heroinaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Opio o Morfina sin prescripción médica</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="opioMorfinaSinPMedica" id="opioMorfinaSinPMedicaSi" value="opioMorfinaSinPMedicaSi" type="radio">
+                    <label class="label" for="opioMorfinaSinPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="opioMorfinaSinPMedica" id="opioMorfinaSinPMedicaNo" value="opioMorfinaSinPMedicaNo" type="radio" checked>
+                    <label class="label" for="opioMorfinaSinPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="opioMorfinaSinPMedica" id="opioMorfinaSinPMedicaNsNc" value="opioMorfinaSinPMedicaNsNc" type="radio">
+                    <label class="label" for="opioMorfinaSinPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Opio o Morfina con prescripción médica</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="opioMorfinaConPMedica" id="opioMorfinaConPMedicaSi" value="opioMorfinaConPMedicaSi" type="radio">
+                    <label class="label" for="opioMorfinaConPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="opioMorfinaConPMedica" id="opioMorfinaConPMedicaNo" value="opioMorfinaConPMedicaNo" type="radio" checked>
+                    <label class="label" for="opioMorfinaConPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="opioMorfinaConPMedica" id="opioMorfinaConPMedicaNsNc" value="opioMorfinaConPMedicaNsNc" type="radio">
+                    <label class="label" for="opioMorfinaConPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Cocaína</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="cocaina" id="cocainaSi" value="cocainaSi" type="radio">
+                    <label class="label" for="cocainaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="cocaina" id="cocainaNo" value="cocainaNo" type="radio" checked>
+                    <label class="label" for="cocainaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="cocaina" id="cocainaNsNc" value="cocainaNsNc" type="radio">
+                    <label class="label" for="cocainaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Cocaína fumables</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="cocainaFumables" id="cocainaFumablesSi" value="cocainaFumablesSi" type="radio">
+                    <label class="label" for="cocainaFumablesSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="cocainaFumables" id="cocainaFumablesNo" value="cocainaFumablesNo" type="radio" checked>
+                    <label class="label" for="cocainaFumablesNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="cocainaFumables" id="cocainaFumablesNsNc" value="cocainaFumablesNsNc" type="radio">
+                    <label class="label" for="cocainaFumablesNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Cristales (metanfetaminas)</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="cristalesMetanfetaminas)" id="cristalesMetanfetaminas)Si" value="cristalesMetanfetaminas)Si" type="radio">
+                    <label class="label" for="cristalesMetanfetaminas)Si">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="cristalesMetanfetaminas)" id="cristalesMetanfetaminas)No" value="cristalesMetanfetaminas)No" type="radio" checked>
+                    <label class="label" for="cristalesMetanfetaminas)No">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="cristalesMetanfetaminas)" id="cristalesMetanfetaminas)NsNc" value="cristalesMetanfetaminas)NsNc" type="radio">
+                    <label class="label" for="cristalesMetanfetaminas)NsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Crack</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="crack" id="crackSi" value="crackSi" type="radio">
+                    <label class="label" for="crackSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="crack" id="crackNo" value="crackNo" type="radio" checked>
+                    <label class="label" for="crackNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="crack" id="crackNsNc" value="crackNsNc" type="radio">
+                    <label class="label" for="crackNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Ketamina</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ketamina" id="ketaminaSi" value="ketaminaSi" type="radio">
+                    <label class="label" for="ketaminaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ketamina" id="ketaminaNo" value="ketaminaNo" type="radio" checked>
+                    <label class="label" for="ketaminaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ketamina" id="ketaminaNsNc" value="ketaminaNsNc" type="radio">
+                    <label class="label" for="ketaminaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Éxtasis (MDMA) u otras sintéticas</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ExtasisMDMAOtrasSinteticas" id="ExtasisMDMAOtrasSinteticasSi" value="ExtasisMDMAOtrasSinteticasSi" type="radio">
+                    <label class="label" for="ExtasisMDMAOtrasSinteticasSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ExtasisMDMAOtrasSinteticas" id="ExtasisMDMAOtrasSinteticasNo" value="ExtasisMDMAOtrasSinteticasNo" type="radio" checked>
+                    <label class="label" for="ExtasisMDMAOtrasSinteticasNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ExtasisMDMAOtrasSinteticas" id="ExtasisMDMAOtrasSinteticasNsNc" value="ExtasisMDMAOtrasSinteticasNsNc" type="radio">
+                    <label class="label" for="ExtasisMDMAOtrasSinteticasNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Anfetaminas sin prescripción médica</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anfetaminasSinPMedica" id="anfetaminasSinPMedicaSi" value="anfetaminasSinPMedicaSi" type="radio">
+                    <label class="label" for="anfetaminasSinPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anfetaminasSinPMedica" id="anfetaminasSinPMedicaNo" value="anfetaminasSinPMedicaNo" type="radio" checked>
+                    <label class="label" for="anfetaminasSinPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anfetaminasSinPMedica" id="anfetaminasSinPMedicaNsNc" value="anfetaminasSinPMedicaNsNc" type="radio">
+                    <label class="label" for="anfetaminasSinPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Anfetaminas con prescripción médica</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anfetaminasConPMedica" id="anfetaminasConPMedicaSi" value="anfetaminasConPMedicaSi" type="radio">
+                    <label class="label" for="anfetaminasConPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anfetaminasConPMedica" id="anfetaminasConPMedicaNo" value="anfetaminasConPMedicaNo" type="radio" checked>
+                    <label class="label" for="anfetaminasConPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anfetaminasConPMedica" id="anfetaminasConPMedicaNsNc" value="anfetaminasConPMedicaNsNc" type="radio">
+                    <label class="label" for="anfetaminasConPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Hipnóticos sin prescripción médica (Rohypnol, luminol, etc.)
+            </h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="hipnoticosSinPMedica" id="hipnoticosSinPMedicaSi" value="hipnoticosSinPMedicaSi" type="radio">
+                    <label class="label" for="hipnoticosSinPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="hipnoticosSinPMedica" id="hipnoticosSinPMedicaNo" value="hipnoticosSinPMedicaNo" type="radio" checked>
+                    <label class="label" for="hipnoticosSinPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="hipnoticosSinPMedica" id="hipnoticosSinPMedicaNsNc" value="hipnoticosSinPMedicaNsNc" type="radio">
+                    <label class="label" for="hipnoticosSinPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Hipnóticos con prescripción médica (Rohypnol, luminol, etc.)</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="hipnoticosConPMedica" id="hipnoticosConPMedicaSi" value="hipnoticosConPMedicaSi" type="radio">
+                    <label class="label" for="hipnoticosConPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="hipnoticosConPMedica" id="hipnoticosConPMedicaNo" value="hipnoticosConPMedicaNo" type="radio" checked>
+                    <label class="label" for="hipnoticosConPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="hipnoticosConPMedica" id="hipnoticosConPMedicaNsNc" value="hipnoticosConPMedicaNsNc" type="radio">
+                    <label class="label" for="hipnoticosConPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Ansiolíticos, Sedantes y Tranquilizante sin prescripción médica (Alplaz, Rivotril, Lexotanil, Valium, etc)</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ansioliticosSedantesTranquilizanteSinPMedica" id="ansioliticosSedantesTranquilizanteSinPMedicaSi" value="ansioliticosSedantesTranquilizanteSinPMedicaSi" type="radio">
+                    <label class="label" for="ansioliticosSedantesTranquilizanteSinPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ansioliticosSedantesTranquilizanteSinPMedica" id="ansioliticosSedantesTranquilizanteSinPMedicaNo" value="ansioliticosSedantesTranquilizanteSinPMedicaNo" type="radio" checked>
+                    <label class="label" for="ansioliticosSedantesTranquilizanteSinPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ansioliticosSedantesTranquilizanteSinPMedica" id="ansioliticosSedantesTranquilizanteSinPMedicaNsNc" value="ansioliticosSedantesTranquilizanteSinPMedicaNsNc" type="radio">
+                    <label class="label" for="ansioliticosSedantesTranquilizanteSinPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Ansiolíticos, Sedantes y Tranquilizante con prescripción médica (Alplaz, Rivotril, Lexotanil, Valium, etc)</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ansioliticosSedantesTranquilizanteConPMedica" id="ansioliticosSedantesTranquilizanteConPMedicaSi" value="ansioliticosSedantesTranquilizanteConPMedicaSi" type="radio">
+                    <label class="label" for="ansioliticosSedantesTranquilizanteConPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ansioliticosSedantesTranquilizanteConPMedica" id="ansioliticosSedantesTranquilizanteConPMedicaNo" value="ansioliticosSedantesTranquilizanteConPMedicaNo" type="radio" checked>
+                    <label class="label" for="ansioliticosSedantesTranquilizanteConPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="ansioliticosSedantesTranquilizanteConPMedica" id="ansioliticosSedantesTranquilizanteConPMedicaNsNc" value="ansioliticosSedantesTranquilizanteConPMedicaNsNc" type="radio">
+                    <label class="label" for="ansioliticosSedantesTranquilizanteConPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            
+            <h3 class="h3">Antidepresivos sin prescripción médica (Foxetin, Prozac, Zoloft, etc)</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="antidepresivosSinPMedica" id="antidepresivosSinPMedicaSi" value="antidepresivosSinPMedicaSi" type="radio">
+                    <label class="label" for="antidepresivosSinPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="antidepresivosSinPMedica" id="antidepresivosSinPMedicaNo" value="antidepresivosSinPMedicaNo" type="radio" checked>
+                    <label class="label" for="antidepresivosSinPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="antidepresivosSinPMedica" id="antidepresivosSinPMedicaNsNc" value="antidepresivosSinPMedicaNsNc" type="radio">
+                    <label class="label" for="antidepresivosSinPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Antidepresivos con prescripción médica (Foxetin, Prozac, Zoloft, etc)</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="antidepresivosConPMedica" id="antidepresivosConPMedicaSi" value="antidepresivosConPMedicaSi" type="radio">
+                    <label class="label" for="antidepresivosConPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="antidepresivosConPMedica" id="antidepresivosConPMedicaNo" value="antidepresivosConPMedicaNo" type="radio" checked>
+                    <label class="label" for="antidepresivosConPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="antidepresivosConPMedica" id="antidepresivosConPMedicaNsNc" value="antidepresivosConPMedicaNsNc" type="radio">
+                    <label class="label" for="antidepresivosConPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Anticolinérgicos sin prescripción médica</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anticolinergicosSinPMedica" id="anticolinergicosSinPMedicaSi" value="anticolinergicosSinPMedicaSi" type="radio">
+                    <label class="label" for="anticolinergicosSinPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anticolinergicosSinPMedica" id="anticolinergicosSinPMedicaNo" value="anticolinergicosSinPMedicaNo" type="radio" checked>
+                    <label class="label" for="anticolinergicosSinPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anticolinergicosSinPMedica" id="anticolinergicosSinPMedicaNsNc" value="anticolinergicosSinPMedicaNsNc" type="radio">
+                    <label class="label" for="anticolinergicosSinPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Anticolinérgicos con prescripción médica</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anticolinergicosConPMedica" id="anticolinergicosConPMedicaSi" value="anticolinergicosConPMedicaSi" type="radio">
+                    <label class="label" for="anticolinergicosConPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anticolinergicosConPMedica" id="anticolinergicosConPMedicaNo" value="anticolinergicosConPMedicaNo" type="radio" checked>
+                    <label class="label" for="anticolinergicosConPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="anticolinergicosConPMedica" id="anticolinergicosConPMedicaNsNc" value="anticolinergicosConPMedicaNsNc" type="radio">
+                    <label class="label" for="anticolinergicosConPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Hongos Alucinógenos</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="hongosAlucinogenos" id="hongosAlucinogenosSi" value="hongosAlucinogenosSi" type="radio">
+                    <label class="label" for="hongosAlucinogenosSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="hongosAlucinogenos" id="hongosAlucinogenosNo" value="hongosAlucinogenosNo" type="radio" checked>
+                    <label class="label" for="hongosAlucinogenosNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="hongosAlucinogenos" id="hongosAlucinogenosNsNc" value="hongosAlucinogenosNsNc" type="radio">
+                    <label class="label" for="hongosAlucinogenosNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">LSD</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="lsd" id="lsdSi" value="lsdSi" type="radio">
+                    <label class="label" for="lsdSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="lsd" id="lsdNo" value="lsdNo" type="radio" checked>
+                    <label class="label" for="lsdNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="lsd" id="lsdNsNc" value="lsdNsNc" type="radio">
+                    <label class="label" for="lsdNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Estimulantes sin prescripción médica (Akatinol, Neuroactil, Ritalina, etc)</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="estimulantesSinPMedica" id="estimulantesSinPMedicaSi" value="estimulantesSinPMedicaSi" type="radio">
+                    <label class="label" for="estimulantesSinPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="estimulantesSinPMedica" id="estimulantesSinPMedicaNo" value="estimulantesSinPMedicaNo" type="radio" checked>
+                    <label class="label" for="estimulantesSinPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="estimulantesSinPMedica" id="estimulantesSinPMedicaNsNc" value="estimulantesSinPMedicaNsNc" type="radio">
+                    <label class="label" for="estimulantesSinPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Estimulantes con prescripción médica (Akatinol, Neuroactil, Ritalina, etc)</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="estimulantesConPMedica" id="estimulantesConPMedicaSi" value="estimulantesConPMedicaSi" type="radio">
+                    <label class="label" for="estimulantesConPMedicaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="estimulantesConPMedica" id="estimulantesConPMedicaNo" value="estimulantesConPMedicaNo" type="radio" checked>
+                    <label class="label" for="estimulantesConPMedicaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="estimulantesConPMedica" id="estimulantesConPMedicaNsNc" value="estimulantesConPMedicaNsNc" type="radio">
+                    <label class="label" for="estimulantesConPMedicaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Según su presunción, ¿el paciente consumió alguna sustancia psicoactiva?</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="presuncionPacienteConsumioSustanciaPsicoactiva" id="presuncionPacienteConsumioSustanciaPsicoactivaSi" value="presuncionPacienteConsumioSustanciaPsicoactivaSi" type="radio">
+                    <label class="label" for="presuncionPacienteConsumioSustanciaPsicoactivaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="presuncionPacienteConsumioSustanciaPsicoactiva" id="presuncionPacienteConsumioSustanciaPsicoactivaNo" value="presuncionPacienteConsumioSustanciaPsicoactivaNo" type="radio" checked>
+                    <label class="label" for="presuncionPacienteConsumioSustanciaPsicoactivaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="presuncionPacienteConsumioSustanciaPsicoactiva" id="presuncionPacienteConsumioSustanciaPsicoactivaNsNc" value="presuncionPacienteConsumioSustanciaPsicoactivaNsNc" type="radio">
+                    <label class="label" for="presuncionPacienteConsumioSustanciaPsicoactivaNsNc">NS/NC</label>
+                </div>
+            </div>
+            <h3 class="h3">Según su presunción, ¿el consumo de sustancias psicoativas por parte del paciente tiene realción con el motivo de consulta?</h3>
+            <div class="divTresRadio">
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsulta" id="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsultaSi" value="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsultaSi" type="radio">
+                    <label class="label" for="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsultaSi">Sí</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsulta" id="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsultaNo" value="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsultaNo" type="radio" checked>
+                    <label class="label" for="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsultaNo">No</label>
+                </div>
+                <div class="divDosRadio">
+                    <input class="inputRadio" name="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsulta" id="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsultaNsNc" value="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsultaNsNc" type="radio">
+                    <label class="label" for="presuncionConsumoSustanciasPsicoactivasRelacionMotivoConsultaNsNc">NS/NC</label>
                 </div>
             </div>
         </section>
-        <div class="botones-form">
-            <button class="btn-enviar" type="submit">Enviar</button>
+        <div class="botonesForm">
+            <button class="btnEnviar" type="submit">Enviar</button>
         </div>
     </form>
+    </main>
 </body>
 </html>

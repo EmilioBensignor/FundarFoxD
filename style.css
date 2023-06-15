@@ -9,6 +9,7 @@
     background-color: #F3F3FE;
     font-family: 'Inter', sans-serif;
     color: #2C3345;
+    padding-bottom: 3vw;
 }
 
 .header{
@@ -132,6 +133,11 @@
     color: #2C3345;
 }
 
+.negrita{
+    font-weight: bolder;
+    color: black;
+}
+
 /* Diseño específico */
 
 .divPar{
@@ -252,7 +258,7 @@
     display: flex;
     justify-content: space-between;
     width: 95%;
-    margin-bottom: 1vw;
+    margin-bottom: 2.5vw;
 }
 
 .divCheckbox{
@@ -276,6 +282,7 @@
 .botonesForm{
     display: flex;
     justify-content: flex-end;
+    margin-top: 2vw;
 }
 
 .btnEnviar{

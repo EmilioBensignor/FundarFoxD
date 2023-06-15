@@ -13,10 +13,45 @@
 }
 
 .header{
-    font-size: 3vw;
     text-align: center;
-    margin-top: 7vw;
-    margin-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b8bdc9;
+    background-color: #009045;
+    padding-bottom: 1vw;
+}
+
+.isologo img{
+    padding: 1vw 0 0 1vw;
+    width: 5vw;
+}
+
+.divUsuarioSesion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5vw;
+}
+
+.divUsuarioSesion p{
+    font-size: 1.2vw;
+    margin-right: 3vw;
+    color: white;
+}
+
+.nombreUsuario{
+    font-weight: bold;
+    color: white;
+}
+
+.divLogo{
+    display: flex;
+    justify-content: center;
+    margin: 1vw 0;
+}
+
+.divLogo img{
+    width: 55%;
 }
 
 /* Diseño general */
@@ -293,4 +328,58 @@
     border: none;
     border-radius: 4px;
     font-size: 1.5vw;
+}
+
+.btnSesion{
+    background-color: #2EA8FF;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 7.8vw;
+    height: 2.8vw;
+    box-shadow: 1.5px 1.5px black;
+    color: black;
+    font-size: 1vw;
+}
+
+.btnSesion:hover{
+    color: white;
+    box-shadow: 1.5px 1.5px #2e69ff;
+}
+
+
+/* INICIO SESION */
+
+.divIniciarSesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1Inicio{
+    font-size: 3vw;
+}
+
+.divIniciarSesion div{
+    text-align: center;
+    margin-top: 3vw;
+}
+
+.divIniciarSesion div img{
+    width: 45%;
+}
+
+.btnSesionGrande{
+    background-color: #2EA8FF;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px black;
+    color: black;
+    font-size: 2vw;
+    margin-top: 3vw;
+    padding: 2%;
+}
+
+.btnSesionGrande:hover{
+    color: white;
+    box-shadow: 1.5px 1.5px #2e69ff;
 }

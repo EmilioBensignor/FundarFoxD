@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap');
+
+.body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3FE;
+    font-family: 'Inter', sans-serif;
+    color: #2C3345;
+    padding-bottom: 3vw;
+}
+
+.header{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b8bdc9;
+    background-color: #009045;
+    padding-bottom: 1vw;
+}
+
+.isologo img{
+    padding: 1vw 0 0 1vw;
+    width: 5vw;
+}
+
+.contenido{
+    margin: 2vw;
+}
+
+/* H1 */
+
+.divH1{
+    background-color: #2B5FA2;
+    width: max-content;
+    padding: 0.2vw 1vw;
+    border-radius: 10px;
+    color: #F3F3FE;
+    margin-bottom: 2vw;
+}
+
+.icono-encuesta{
+    display: flex;
+    align-items: center;
+}
+
+.icono-hs{
+    width: 0.7vw;
+    height: min-content;
+    margin-right: 0.5vw;
+}
+
+.divTable{
+    margin-top: 1vw;
+    height: 40vw;
+    overflow-y: auto;
+}
+
+.table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 2%;
+}
+
+.tr td, .tr th{
+    border: 1px solid black;
+    padding: 1vw 2vw;
+    text-align: start;
+}
